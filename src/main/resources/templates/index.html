@@ -4,12 +4,12 @@
         <title>Turismo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link href="/css/estilo1.css" rel="stylesheet" type="text/css"/> -->
+        <link href="/css/estilo1.css" rel="stylesheet" type="text/css"/> 
     </head>
     <body>
         <h2>Lista de Estados</h2>
-        <a th:href="@{/nuevoEstado}">Nuevo estado</a>
-        <br/><!-- comment -->
+        <a class="nuevo" th:href="@{/nuevoEstado}">Nuevo estado</a>
+        <br/>
         <br/>
         <div th:if="${estados != null and !estados.empty}">
             <table border="1">
